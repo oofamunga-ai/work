@@ -1,0 +1,1 @@
+ sudo docker run --platform linux/amd64 --rm -u user -it -v /home/shell/sourceCode:/home/user/sourceCode --net=host -e DISPLAY=:0 boxtopgangsta/builderx64:v3 /bin/bash

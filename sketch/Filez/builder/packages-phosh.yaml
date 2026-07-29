@@ -1,0 +1,105 @@
+{{- $architecture := or .architecture "arm64" -}}
+
+architecture: {{ $architecture }}
+
+actions:
+  - action: apt
+    recommends: false
+    description: Install Phosh packages
+    packages:
+      #- mobian-phosh
+      # Additional software we don't want metapackages to depend on
+      #- phoc
+      - nano
+      - fdisk
+      - xorg
+      - chromium
+      - xfce4
+      - xfce4-goodies
+      - xfce4-dev-tools
+      - onboard
+      - gdm3
+      - x11-xkb-utils
+      - x11-xfs-utils
+      - x11-utils
+      - x11-touchscreen-calibrator
+      - x11-session-utils
+      - x11-common
+      - x11-apps
+      - x11-xserver-utils
+      - x11proto-dev
+      #- mobian-phosh
+      - phosh
+      - phosh-dev
+      #- phosh-phone
+      #- phosh-full
+      #- phosh-pim
+      - phosh-games
+      - eog
+      - mir-platform-graphics-wayland
+      - epiphany-browser
+      #- endeavour
+      #- evince
+      - firefox-esr
+      - gnome-shell
+      # Temporary hack until geary returns to testing
+      #- geary
+      - gnome-calculator
+      - gnome-calendar
+      - gnome-console
+      - gnome-maps
+      - gnome-software
+      - gnome-software-plugin-flatpak
+      - gnome-sound-recorder
+      - gnome-text-editor
+      - gnome-usage
+      - gnome-weather
+      #- lollypop
+      #- phog
+      - phosh-mobile-settings
+      - phosh-plugins
+      - phosh-tour
+      - portfolio-filemanager
+      - gnome-console
+      - xwayland
+      - waylandpp-dev 
+      - maliit-keyboard 
+      - libwayland-server++1 
+      - libwayland-egl-backend-dev 
+      - libwayland-cursor++1 
+      - libwayland-egl++1
+      - libwayland-dev 
+      - wayland-scanner++ 
+      - wvkbd 
+      - wlr-randr 
+      - wdisplays
+      - thunar
+      - xsettingsd
+      - qt6-wayland-dev
+      - gnome-control-center-dev      
+      - xserver-xorg-dev
+      - xserver-xorg-video-all 
+      - xinput
+      - xinput-calibrator           
+      - powersupply-gtk
+      #- webext-ublock-origin-firefox
+      # Temporary workaround until chatty returns to bookworm
+      #- chatty
+      - wofi 
+      - xdg-desktop-portal-wlr 
+      - wlr-randr 
+      - wayfire
+      - wayfire-dev 
+      - tofi 
+      - swaylock 
+      - swaybg
+      #- libwlroots-dev
+      #- libwlroots10
+      - libwf-config-dev
+      - libwf-utils-dev
+      - libwf-touch-dev
+
+  #- action: run
+  #  description: Disable getty in the Phosh environment
+  #  chroot: true
+  #  command: systemctl disable getty@.service

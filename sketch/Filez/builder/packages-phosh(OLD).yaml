@@ -1,0 +1,116 @@
+{{- $architecture := or .architecture "arm64" -}}
+
+architecture: {{ $architecture }}
+
+actions:
+  - action: apt
+    recommends: true
+    description: Install Phosh packages
+    packages:
+      - mobian-phosh
+      # Additional software we don't want metapackages to depend on
+      #- eog
+      #- phoc
+      - waylandpp-dev 
+#     - libevas1-engines-wayland 
+      - qml6-module-qtwayland-compositor 
+#     - yambar 
+#     - waybar 
+      - maliit-keyboard 
+      - libwayland-server++1 
+      - libwayland-egl-backend-dev 
+      #- mir-platform-graphics-wayland
+      - fwupd*
+      - gedit
+      - libwayland-cursor++1 
+      - libwayland-egl++1
+      #- libwayland-bin 
+      #- libwayland-client-extra++1 
+      - libwayland-dev 
+      #- libmirwayland-bin
+      #- libmirwayland-dev
+      - wayland-scanner++ 
+      - wvkbd 
+      #- wofi 
+      #- xdg-desktop-portal-wlr 
+      - wlr-randr 
+      #- wayfire
+      #- wayfire-dev 
+      #- tofi 
+      #- swaylock 
+      #- swaybg
+      #- libwlroots-dev
+      #- libwlroots10
+      #- libwf-config-dev
+      #- libwf-utils-dev
+      #- libwf-touch-dev
+      - nano
+      #- iraf-rvsao 
+      #- kanshi
+      - xwayland
+      - wdisplays
+      - chromium
+      - xfce4
+      - xfce4-goodies
+      - xfce4-dev-tools
+      - thunar
+      - xsettingsd
+      - onboard
+      #- gnome-flashback
+      #- epiphany-browser
+      #- endeavour
+      #- evince
+      - firefox-esr
+      #- geary
+      - qt6-wayland-dev
+      #- qt6-wayland
+      #- gnome-session
+      #- gnome-shell
+      - gnome-control-center-dev
+      - gdm3
+      #- xserver-xorg
+      - xserver-xorg-dev
+      - xserver-xorg-video-all
+      #- xserver-xorg-input-all
+      #- x11-xserver-utils
+      #- x11-session-utils
+      - xorg-dev
+      - xinput
+      - xinput-calibrator
+      #- xserver-xorg-input-multitouch
+      #- xserver-xorg-input-synaptics-dev
+      #- xserver-xorg-input-synaptics
+      #- xserver-xorg-input-mouse
+      #- xserver-xorg-input-mtrack
+      #- lomiri
+      #- lomiri-desktop-session
+      - gnome-calculator
+      - gnome-calendar
+      - gnome-console
+      #- gnome-maps
+      - gnome-software
+      - gnome-software-plugin-flatpak
+      - gnome-sound-recorder
+      - gnome-text-editor
+      - gnome-usage
+      - gnome-weather
+      #- lollypop
+      #- phog
+      - phosh-mobile-settings
+      - phosh-plugins
+      - phosh-tour
+      - portfolio-filemanager
+      - powersupply-gtk
+      #- webext-ublock-origin-firefox
+      # Temporary workaround until chatty returns to bookworm
+      #- chatty
+
+  - action: run
+    description: Disable getty in the Phosh environment
+    chroot: true
+    command: systemctl disable getty@.service
+
+#  - action: run
+#    description: Remove greetd
+#    chroot: true
+#    command: sudo apt-get remove greetd
