@@ -1,0 +1,5 @@
+Types: deb
+URIs: https://storage.googleapis.com/cros-packages/136/
+Suites: trixie
+Components: main
+Signed-By: /etc/apt/trusted.gpg.d/cros.gpg

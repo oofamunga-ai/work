@@ -1,0 +1,3 @@
+deb [arch=riscv64] https://debianrepo.starfivetech.com starfive-debian main
+deb [arch=riscv64] https://debianrepo.starfivetech.com VisionFive2 contrib restricted
+#deb [trusted=yes] file:/var/cache/apt/archives/test ./

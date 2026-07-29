@@ -1,0 +1,27 @@
+Types: deb deb-src
+URIs: https://us.archive.ubuntu.com/ubuntu/
+Suites: resolute resolute-updates resolute-backports
+Components: main restricted universe multiverse
+Architectures: amd64 i386
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+
+Types: deb deb-src
+URIs: https://security.ubuntu.com/ubuntu/
+Suites: resolute-security
+Components: main restricted universe multiverse
+Architectures: amd64 i386
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+
+Types: deb deb-src
+URIs: https://ports.ubuntu.com/ubuntu-ports
+Suites: resolute resolute-updates resolute-backports resolute-security
+Components: main restricted universe multiverse
+Architectures: arm64 armhf
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+
+Types: deb
+URIs: https://us.archive.ubuntu.com/ubuntu/
+Suites: resolute-proposed
+Components: universe multiverse main restricted
+Architectures: amd64 i386
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
