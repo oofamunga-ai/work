@@ -1,0 +1,3 @@
+config BR2_PACKAGE_HASHCAT
+    bool "hashcat"
+    select BR2_TOOLCHAIN_BUILDROOT_GLIBC

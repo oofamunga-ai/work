@@ -1,0 +1,10 @@
+[begin] (fluxbox)
+[include] (/etc/X11/fluxbox/fluxbox-menu)
+[exec] (Chromium) {/usr/bin/chromium} 
+[exec] (xfce4-terminal) {/usr/bin/xfce4-terminal}
+[exec] (thunar) {/usr/bin/thunar}
+[exec] (gedit) {/usr/bin/gedit}
+[exec] (mousepad) {/usr/bin/mousepad}
+
+[end]
+

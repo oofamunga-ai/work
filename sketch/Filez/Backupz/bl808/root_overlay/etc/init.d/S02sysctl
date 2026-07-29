@@ -1,0 +1,41 @@
+#!/bin/sh
+
+PROGRAM="sysctl"
+
+SYSCTL_ARGS=""
+
+# shellcheck source=/dev/null
+[ -r "/etc/default/$PROGRAM" ] && . "/etc/default/$PROGRAM"
+
+start() {
+	printf 'Starting %s: ' "$PROGRAM"
+	# shellcheck disable=SC2086 # we need the word splitting
+	/sbin/sysctl --quiet --system $SYSCTL_ARGS
+	status=$?
+	if [ "$status" -eq 0 ]; then
+		echo "OK"
+	else
+	echo "FAIL"
+	fi
+	return "$status"
+}
+
+stop() {
+	printf 'Stopping %s: OK\n' "$PROGRAM"
+}
+
+restart() {
+	stop
+	sleep 1
+	start
+}
+
+case "$1" in
+        start|stop)
+		"$1";;
+	restart|reload)
+		restart;;
+        *)
+                echo "Usage: $0 {start|stop|restart|reload}"
+                exit 1
+esac
