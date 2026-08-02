@@ -75,6 +75,19 @@ if [ $archz = 'add' ]; then             #add arch rou sources file direct
             #sudo dpkg --remove-architecture armel
             #sudo dpkg --remove-architecture arm64
             #else
+
+	elif [[ $archz = 'remove' && $MACHINE_TYPE = 'riscv' ]]; then
+    	####remove all architecture except machines
+    	#rm != $MACHINE_TYPE
+            echo "sweet"
+	    #sudo dpkg --add-architecture i386
+            #sudo dpkg --remove-architecture i386
+            #sudo dpkg --remove-architecture armhf
+            #sudo dpkg --remove-architecture armel
+            #sudo dpkg --remove-architecture arm64
+            #sudo dpkg --remove-architecture aarch64
+	    #sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 
+
         elif [ $MACHINE_TYPE = 'aarch64' ]; then
             sudo dpkg --add-architecture armhf
             #sudo dpkg --add-architecture amd64
