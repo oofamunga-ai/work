@@ -8,9 +8,9 @@ git clone https://github.com/starfive-tech/linux.git -b pinetabv-6.6.y-devel $HO
 #git clone https://github.com/torvalds/linux.git $HOME/sourceCode/pc/Kernel
 cd ~/sourceCode/pc/tabvKernel
 git pull
-git add .
-git commit -m "."
-git merge
+#git add .
+#git commit -m "."
+#git merge
 #cp /boot/config-$(uname -r) .config
 #make oldconfig
 #make ARCH=arm64 defconfig
