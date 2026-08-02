@@ -86,7 +86,7 @@ if [ $archz = 'add' ]; then             #add arch rou sources file direct
             #sudo dpkg --remove-architecture armel
             #sudo dpkg --remove-architecture arm64
             #sudo dpkg --remove-architecture aarch64
-	    #sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 
+	    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 78DBA3BC47EF2265
 
         elif [ $MACHINE_TYPE = 'aarch64' ]; then
             sudo dpkg --add-architecture armhf
