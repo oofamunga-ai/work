@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en"><head>
+    <script>
+      !function(){var e,t,n,i,r={passive:!0,capture:!0},a=new Date,o=function(){i=[],t=-1,e=null,f(addEventListener)},c=function(i,r){e||(e=r,t=i,n=new Date,f(removeEventListener),u())},u=function(){if(t>=0&&t<n-a){var r={entryType:"first-input",name:e.type,target:e.target,cancelable:e.cancelable,startTime:e.timeStamp,processingStart:e.timeStamp+t};i.forEach((function(e){e(r)})),i=[]}},s=function(e){if(e.cancelable){var t=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,t){var n=function(){c(e,t),a()},i=function(){a()},a=function(){removeEventListener("pointerup",n,r),removeEventListener("pointercancel",i,r)};addEventListener("pointerup",n,r),addEventListener("pointercancel",i,r)}(t,e):c(t,e)}},f=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach((function(t){return e(t,s,r)}))},p="hidden"===document.visibilityState?0:1/0;addEventListener("visibilitychange",(function e(t){"hidden"===document.visibilityState&&(p=t.timeStamp,removeEventListener("visibilitychange",e,!0))}),!0);o(),self.webVitals={firstInputPolyfill:function(e){i.push(e),u()},resetFirstInputPolyfill:o,get firstHiddenTime(){return p}}}();
+
+    </script>
+    
+    <script>
+      var SURF_N_PERF={marks:{},highResMarks:{}};SURF_N_PERF.marks.pageStart=(new Date).getTime(),window.performance&&(window.performance.now&&(SURF_N_PERF.highResMarks.pageStart=window.performance.now()),window.performance.mark&&window.performance.mark("pageStart")),SURF_N_PERF.visibility={initialState:document.visibilityState,stateUpdates:[],hiddenProperty:null,stateProperty:null,eventName:null,markChange:function(){var i="visibility"+SURF_N_PERF.visibility.stateUpdates.length;window.performance&&(window.performance.mark&&window.performance.mark(i),window.performance.now&&(SURF_N_PERF.highResMarks[i]=window.performance.now())),SURF_N_PERF.marks[i]=(new Date).getTime(),SURF_N_PERF.visibility.stateUpdates.push(document[SURF_N_PERF.visibility.stateProperty])}},"hidden"in document?(SURF_N_PERF.visibility.hiddenProperty="hidden",SURF_N_PERF.visibility.stateProperty="visibilityState",SURF_N_PERF.visibility.eventName="visibilitychange"):"webkitHidden"in document&&(SURF_N_PERF.visibility.hiddenProperty="webkitHidden",SURF_N_PERF.visibility.stateProperty="webkitVisibilityState",SURF_N_PERF.visibility.eventName="webkitvisibilitychange",SURF_N_PERF.visibility.initialState=document[SURF_N_PERF.visibility.stateProperty]),SURF_N_PERF.setPageLoad=function(){SURF_N_PERF.marks.loadEventEnd=(new Date).getTime(),window.performance&&window.performance.now&&(SURF_N_PERF.highResMarks.loadEventEnd=window.performance.now())},SURF_N_PERF.setFirstPaint=function(){SURF_N_PERF.marks.firstPaintFrame=(new Date).getTime(),window.performance&&window.performance.now&&(SURF_N_PERF.highResMarks.firstPaintFrame=window.performance.now(),window.performance.mark&&window.performance.mark("firstPaintFrame"))},window.addEventListener?(SURF_N_PERF.visibility.stateProperty&&document.addEventListener(SURF_N_PERF.visibility.eventName,SURF_N_PERF.visibility.markChange,!1),window.addEventListener("load",SURF_N_PERF.setPageLoad,!1)):window.attachEvent("onload",SURF_N_PERF.setPageLoad),window.requestAnimationFrame&&window.requestAnimationFrame(SURF_N_PERF.setFirstPaint);
+    </script>
+    <meta charset="utf-8">
+    <title>Welcome Xfinity Customers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cp-webapp.wifi.connected.xfinity.com/assets/main.7da7a18d29d55693f529.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <script src="https://assets.adobedtm.com/extensions/EPb56e12d7054b4acea984e91c910051cc/AppMeasurement.min.js" async=""></script><script src="https://assets.adobedtm.com/extensions/EPb56e12d7054b4acea984e91c910051cc/AppMeasurement_Module_ActivityMap.min.js" async=""></script></head>
+  <body>
+    
+
+<!-- Adobe Analytics embed code. -->
+<script src="https://assets.adobedtm.com/331fbea29f79/eb1d1a9b6d03/launch-3a22dc975b85.min.js"></script><script>
+var isOutbound = function(e) {
+        if (!e.getAttribute("href"))
+            return false;
+         var t = e.hostname,
+             n = e.href,
+             w=["#","#accordion","local:","localhost","javascrpt:","mailto:","tel:","wifi.xfinity.com","wifiondemand.xfinity.com"];
+          for(var i=0;i<w.length;i++)
+          {
+            if(t===w[i] || n.indexOf(w[i])>-1)
+            return false;
+          }
+return true;
+}
+
+</script>
+
+<script>
+    window.digitalData = {
+        pageInfo: {
+            pageName:      'wifi|wifi|captive portal',
+            siteSection:   'Landing Page',
+            errorMessage:  ''
+        }
+    };
+    _satellite.track("send-Event");
+</script>
+
+
+
+
+
+
+
+
+<div class="min-h-screen flex flex-col">
+  <div class="flex-1">
+    
+    <div class="bg-material-1">
+      <div class="max-w-screen-lg mx-auto py-8">
+        <main class="grid gap-8 px-5">
+          <div>
+            <svg viewBox="0 0 69 23.3" class="w-20 text-[#8A8A8A]" role="img">
+              <title>Xfinity</title>
+              <path fill="currentColor" d="M7.71 11.76L12 6h-1.77a2 2 0 0 0-1.76.86L6.19 9.88 4 6.81A2 2 0 0 0 2.21 6H.4l4.28 5.81L0 18.09h1.71a2 2 0 0 0 1.76-.86l2.71-3.59 6.35 8.78a2 2 0 0 0 1.76.86h1.86zm34.68 6.33h2.45V6h-2.45zm-19.45 0h2.46V6h-2.46zm37.18 4.28L69 6h-1.33a1.81 1.81 0 0 0-1.76.86l-3.5 6.5-3-6.5A1.75 1.75 0 0 0 57.62 6h-1.28L61 15.85l-4.07 7.43h1.33a2 2 0 0 0 1.86-.91zM28.32 6v12.09h2.45V9.76A3.86 3.86 0 0 1 34 8c1.81 0 3 1.14 3 3.43v5.47a1.11 1.11 0 0 0 1.14 1.17h1.31V11c0-3.14-2-5.33-4.9-5.33a5.47 5.47 0 0 0-3.81 1.45V6zm21.06 7.83a4.21 4.21 0 0 0 4.52 4.52 6.23 6.23 0 0 0 1.79-.24l-.5-2.14a5 5 0 0 1-1.12.12 2.08 2.08 0 0 1-2.24-2.31V8.14h3.43L54.27 6h-2.43V1.07l-2.45 1.07V6h-2.6v2.14h2.59zm-34-5.64v9.95h2.45v-10H21V6h-3.15V5c0-2.07 1.24-2.76 2.45-2.76a2.93 2.93 0 0 1 .83.12l.5-2.17A4.29 4.29 0 0 0 20.11 0c-3 0-4.71 2.26-4.71 5v1h-1.29l-1.54 2.14z"></path>
+            </svg>
+          </div>
+          <div>
+            <svg viewBox="0 0 72 72" class="w-21.5 h-21.5 fill-stroke-theme1-base" role="presentation">
+              <path d="M40.2,6h-8.5C20,6,10.5,15.6,10.5,27.4v0C10.5,41.6,36,66,36,66s25.5-24.4,25.5-38.6v0 C61.5,15.6,52,6,40.2,6z M36,59.7c-9.2-9.4-21-24.2-21-32.2c0-9.3,7.5-16.9,16.7-16.9h8.5c9.2,0,16.8,7.6,16.8,16.9 C57,35.4,45.2,50.2,36,59.7z M44.4,32.4c-2.3-2.3-5.3-3.5-8.5-3.5c-3.2,0-6.2,1.2-8.4,3.5l-2-2C28.3,27.6,32,26,35.9,26 c3.9,0,7.7,1.5,10.5,4.3L44.4,32.4z M36,33.9c1.8,0,3.6,0.7,4.9,2l2-2c-1.8-1.8-4.3-2.9-6.9-2.9c-2.6,0-5.1,1-6.9,2.9l2,2 C32.4,34.6,34.2,33.9,36,33.9z M36,23.8c4.5,0,8.8,1.8,12,5l2-2c-3.7-3.7-8.7-5.8-14-5.8c-5.3,0-10.3,2.1-14,5.8l2,2 C27.2,25.6,31.5,23.8,36,23.8z M34.3,38.7c0,0.9,0.7,1.6,1.7,1.6s1.7-0.7,1.7-1.6c0-0.9-0.7-1.6-1.7-1.6S34.3,37.8,34.3,38.7z"></path>
+            </svg>
+          </div>
+          <h1 class="text-display2 text-alpha-primary" data-i18n="captive.st22.welcome">Welcome to Xfinity&nbsp;hotspots!</h1>
+          <p class="text-body1 text-neutral-base text-alpha-secondary" data-i18n="captive.st22.signInToJoin">Sign in to join this hotspot.</p>
+          <div class="flex">
+            <a class="text-center rounded-small focus:outline-none focus:ring ring-offset-2 whitespace-nowrap text-button1 inline-flex items-center justify-center space-x-2 px-8 py-4 text-inverse-base bg-fill-theme1-base hover:bg-fill-theme1-hover focus:bg-fill-theme1-hover focus:text-inverse-base hover:text-inverse-base ring-stroke-theme1-base" href="https://oauth.xfinity.com/oauth/authorize?client_id=cl-captive-portal&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fcp-app.wifi.connected.xfinity.com%2Foauthcallback%3Fhash%3D6i%2B%2F3hM4GiMEXKLUN6qQsu3MF5RcN2bjF9cefqbyVX4ftbS7P%2FvOU5yIH4Kj43XH1g5DV1xzKapmKnYvYk1DzErEh4F%2BdIj9aFEIgTmuTeKY%2FfiAvWH0vv2FMLoLwSUjOeGMb06xiEWjil3LnlixCUM3VX7%2Bov4mEwW0WmqPe1Ok3QZzM0OZZhno36o3muT%2FT%2B4Ta4QXzLbE6Z16t9YgqLEChyaZqrYnIFf3qnEXaccagpWp5xv62n2Kt09i8CozekAWoWRALCmYtc4fIZLX16J4fag22rxUSzOKnI%2B2DnA%3D" data-bid="CTA_LINK" id="btn-sign-in">
+    
+      
+        <span>Sign in</span>
+      
+    </a>
+
+          </div>
+          <p class="text-body1 text-neutral-base text-alpha-secondary" data-i18n="captive.st22.automaticallyConnect">You'll automatically connect to millions of hotspots nationwide - all included with your plan.</p>
+        </main>
+      </div>
+    </div>
+  </div>
+  <div class="py-10">
+    
+<div class="max-w-screen-lg mx-auto px-5">
+  <footer class="grid">
+    <img src="/img/comcast-logo.svg" alt="Comcast" class="w-20">
+    <div class="mt-7">
+      <p class="text-body1">© 2023 Comcast. All rights reserved.</p>
+      <p class="text-body1 leading-normal">
+        <a class="text-[#6138F5] pl-0 hover:text-theme1-hover hover:underline" href="https://www.xfinity.com/privacy/">Privacy Center</a> |
+        <a class="text-[#6138F5] hover:text-theme1-hover hover:underline" href="https://www.xfinity.com/privacy/policy">Privacy Policy</a> |
+        <a class="text-[#6138F5] hover:text-theme1-hover hover:underline" href="https://my.xfinity.com/terms">Terms of Service</a> |
+        <a class="text-[#6138F5] hover:text-theme1-hover hover:underline" href="https://www.xfinity.com/privacy/manage-preference">Do Not Sell My Personal Information</a> |
+        <a class="text-[#6138F5] hover:text-theme1-hover hover:underline" href="https://www.xfinity.com/learn/internet-service/wifi">Help</a>
+      </p>
+    </div>
+  </footer>
+</div>
+
+  </div>
+</div>
+
+    
+
+
+<script>
+window.CP = window.CP || {};
+window.CP.environment =    "PRODUCTION",
+window.CP.appUrl = "https://cp-app.wifi.connected.xfinity.com",
+window.CP.meleeConfig = {
+  environment:             "prod",
+  meleeAppName:           "eleventy_captive_portal",
+  token:                   "04fcc8fa-d254-4db6-8730-0f813bb7a14d",
+  url:                     "https://melee.sed.dh.comcast.net/v2/event"
+};
+window.CP.revisionShort = "7c30958";
+window.CP.page = {
+  type:                   "captive",
+  tmpl:                   "welcome_st22",
+  lang:                   "en",
+}
+</script>
+
+    <script src="https://cp-webapp.wifi.connected.xfinity.com/assets/main.6c3bde39bdc7c4400e56.js"></script>
+    <!--
+      Build Info:
+      - Environment: PRODUCTION
+      - Git Commit: 7c30958
+      - Build Date/Time: Thu, 19 Jan 2023 13:41:04 GMT
+    -->
+  
+
+</body></html>

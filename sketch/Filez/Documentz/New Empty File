@@ -1,0 +1,18 @@
+drivers/infiniband/hw/hfi1/ud.o
+  CC [M]  drivers/infiniband/hw/hfi1/user_exp_rcv.o
+  CC [M]  drivers/infiniband/hw/hfi1/user_pages.o
+  CC [M]  drivers/infiniband/hw/hfi1/user_sdma.o
+  CC [M]  drivers/infiniband/hw/hfi1/verbs.o
+  CC [M]  drivers/infiniband/hw/hfi1/verbs_txreq.o
+  CC [M]  drivers/infiniband/hw/hfi1/vnic_main.o
+  CC [M]  drivers/infiniband/hw/hfi1/vnic_sdma.o
+  CC [M]  drivers/infiniband/hw/hfi1/debugfs.o
+  LD [M]  drivers/infiniband/hw/hfi1/hfi1.o
+make[5]: *** [Makefile:2020: .] Error 2
+make[4]: *** [Makefile:359: __build_one_by_one] Error 2
+make[3]: *** [debian/rules:10: build-arch] Error 2
+dpkg-buildpackage: error: debian/rules binary subprocess returned exit status 2
+make[2]: *** [scripts/Makefile.package:139: bindeb-pkg] Error 2
+make[1]: *** [/home/shell/work/sketch/Filez/sourceCode/pc/LinuxKernel/Makefile:1647: bindeb-pkg] Error 2
+make: *** [Makefile:234: __sub-make] Error 2
+

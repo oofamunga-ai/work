@@ -1,0 +1,29 @@
+sudo flashrom --programmer internal
+
+https://wiki.archlinux.org/title/Flashing_BIOS_from_Linux
+
+flashrom v1.2 on Linux 6.0.0-6-amd64 (x86_64)
+flashrom is free software, get the source code at https://flashrom.org
+
+Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
+No DMI table found.
+Found chipset "Intel HM370".
+This chipset is marked as untested. If you are using an up-to-date version
+of flashrom *and* were (not) able to successfully update your firmware with it,
+then please email a report to flashrom@flashrom.org including a verbose (-V) log.
+Thank you!
+Enabling flash write... SPI Configuration is locked down.
+FREG0: Flash Descriptor region (0x00000000-0x00000fff) is read-only.
+FREG2: Management Engine region (0x00001000-0x005fffff) is read-only.
+Not all flash regions are freely accessible by flashrom. This is most likely
+due to an active ME. Please see https://flashrom.org/ME for details.
+PR0: Warning: 0x00e00000-0x00ffffff is read-only.
+PR1: Warning: 0x00aa0000-0x00b1ffff is read-only.
+PR2: Warning: 0x00672000-0x009fffff is read-only.
+At least some flash regions are write protected. For write operations,
+you should use a flash layout and include only writable regions. See
+manpage for more details.
+Enabling hardware sequencing because some important opcode is locked.
+OK.
+Found Programmer flash chip "Opaque flash chip" (16384 kB, Programmer-specific) mapped at physical address 0x0000000000000000.
+No operations were specified.

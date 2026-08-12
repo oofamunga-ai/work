@@ -1,0 +1,2 @@
+iptables -t nat -I PREROUTING -p tcp -d 192.168.0.102 --dport 1022 -j DNAT --to-destination 192.168.122.221:22
+iptables -I FORWARD -m state -d 192.168.122.221/24 --state NEW,RELATED,ESTABLISHED -j ACCEPT

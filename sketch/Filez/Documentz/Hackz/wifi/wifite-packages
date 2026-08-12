@@ -1,0 +1,33 @@
+reaver bully cowpatty hashcat hcxdumptool
+
+iwconfig Aircrack-ng airmon-ng aircrack-ng aireplay-ng airodump-ng packetforge-ng ishark pyrit hcxpcaptool python
+
+ishark packetforge-ng pyrit ???
+install pyrit from source thats it
+
+
+sudo wifite --daemon --clients-only --random-mac --reaver --pmkid --new-hs --dict /usr/share/dict/words --kill
+sudo wifite --random-mac --reaver --pmkid -p 600 -inf --new-hs --dict lik.txt --kill
+
+iwconfig: For identifying wireless devices already in Monitor Mode.
+ifconfig: For starting/stopping wireless devices.
+Aircrack-ng suite, includes:
+airmon-ng: For enumerating and enabling Monitor Mode on wireless devices.
+aircrack-ng: For cracking WEP .cap files and WPA handshake captures.
+aireplay-ng: For deauthing access points, replaying capture files, various WEP attacks.
+airodump-ng: For target scanning & capture file generation.
+packetforge-ng: For forging capture files.
+Optional, but Recommended:
+
+tshark: For detecting WPS networks and inspecting handshake capture files.
+reaver: For WPS Pixie-Dust & brute-force attacks.
+Note: Reaver's wash tool can be used to detect WPS networks if tshark is not found.
+bully: For WPS Pixie-Dust & brute-force attacks.
+Alternative to Reaver. Specify --bully to use Bully instead of Reaver.
+Bully is also used to fetch PSK if reaver cannot after cracking WPS PIN.
+coWPAtty: For detecting handshake captures.
+pyrit: For detecting handshake captures.
+hashcat: For cracking PMKID hashes.
+hcxdumptool: For capturing PMKID hashes.
+hcxpcaptool: For converting PMKID packet captures into hashcat's format.
+python iwconfig Aircrack-ng airmon-ng aircrack-ng aireplay-ng airodump-ng packetforge-ng ishark reaver bully cowpatty pyrit hashcat hcxdumptool hcxpcaptool

@@ -1,0 +1,51 @@
+Assemble the Wi-Fi Duck
+
+To connect the ESP8266 and ATmega32U4, we'll be working with a breadboard and jumper wires. So place each MCU on the breadboard, then use jumper wires to make the following pin connections.
+
+    D1 or GPIO 5 (ESP8266) to 3 or SCL (ATmega32U4)
+    D2 or GPIO 4 (ESP8266) to 2 or SDA (ATmega32U4)
+    GND (ESP8266) to GND (ATmega32U4)
+    5V (ESP8266) to RAW (ATmega32U4)
+
+If you have a NeoPixel LED, also make these connections:
+
+    VCC (NeoPixel) to VCC (ATmega32U4)
+    GND (NeoPixel) to GND (ATmega32U4)
+    DI (NeoPixel) to 7 (ATmega32U4)
+
+Without the LED, it should look like this:
+
+########################
+
+embed php in html 
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Embed PHP in a .html File</title>
+
+</head>
+
+<body>
+
+<h1><?php echo "Hello World" ?></h1>
+
+</body>
+
+</html>
+########################
+
+embed python in html:
+
+<!DOCTYPE html>
+<body>
+    <?php shell_exec("python your_file_here.py") ?>
+</body>
+
+
+
+external ip address
+24.118.189.43

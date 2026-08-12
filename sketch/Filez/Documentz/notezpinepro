@@ -1,0 +1,19 @@
+https://dl.espressif.com/dl/package_esp32_index.json
+https://arduino.esp8266.com/stable/package_esp8266com_index.json
+http://digistump.com/package_digistump_index.json
+https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json
+https://raw.githubusercontent.com/spacehuhn/hardware/master/wifiduck/package_wifiduck_index.json
+https://raw.githubusercontent.com/SpacehuhnTech/arduino/main/package_spacehuhn_index.json
+https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
+https://bittit.info/package_rpi_digispark_index.json
+https://gist.github.com/per1234/429d6e680ccdf6da6a27a7d0f722113e/raw/a6c1bf4dd28d7d52b96f19751b9280a3cd82b73f/package_per1234_digistump_armlinux_index.json
+
+# docker run --rm -ti --platform linux/arm/v7 ubuntu:latest uname -m
+armv7l
+
+# docker run --rm -ti --platform linux/amd64 ubuntu:latest uname -m
+x86_64
+
+ linux/arm64/v8
+ 
+ ampy -p /dev/ttyUSB* put main.py

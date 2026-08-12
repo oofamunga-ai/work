@@ -1,0 +1,48 @@
+iw aircrack-ng xterm bettercap dnsmasq bully pixiewps dhcpd hashcat
+
+awk ettercap airmon-ng airodump-ng ip lspci ps hostapd-wpe aireplay-ng nft asleap packetforge-ng wpaclean
+
+
+
+Essential tools: checking... 
+iw .... Ok
+awk .... Ok
+airmon-ng .... Ok
+airodump-ng .... Ok
+aircrack-ng .... Ok
+xterm .... Ok
+ip .... Ok
+lspci .... Ok
+ps .... Ok
+
+Optional tools: checking... 
+bettercap .... Ok
+ettercap .... Ok
+dnsmasq .... Ok
+hostapd-wpe .... Ok
+aireplay-ng .... Ok
+bully .... Ok
+nft .... Ok
+pixiewps .... Ok
+dhcpd .... Ok
+asleap .... Ok
+packetforge-ng .... Ok
+hashcat .... Ok
+wpaclean .... Ok
+hostapd .... Ok
+etterlog .... Ok
+tshark .... Ok
+mdk4 .... Ok
+wash .... Ok
+hcxdumptool .... Ok
+reaver .... Ok
+hcxpcapngtool .... Ok
+john .... Ok
+crunch .... Ok
+beef .... Error (Possible package name : beef-xss / beef-project)
+lighttpd .... Ok
+openssl .... Ok
+
+
+eaphammer
+wifiphisher
