@@ -179,6 +179,7 @@ if [ -e "$YUM" ]; then
   sudo mkdir -p /etc/apt/backup
   #sudo cp /etc/apt/backup/sources.list-"$NOW".bak /etc/apt/sources.list
   sudo cp -Rv /etc/apt/sources.list /etc/apt/backup/sources.list-"$NOW".bak
+  sudo cp -Rv /etc/apt/sources.list.d/* /etc/apt/backup/sources.list-"$NOW".bak
   sudo rm -r /etc/apt/sources.list
   sudo cp -Rv $HOME/work/sketch/Filez/apt/sources.list.placeholder /etc/apt/sources.list
 #if [ $wall = 'no' ]; then
@@ -195,8 +196,9 @@ read wall
 if [ $wall = 'a' ]; then
     #sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak #Kali
     #sudo rm -r /etc/apt/sources.list
-    sudo cp ~/work/sketch/Filez/apt/sources.list /etc/apt/sources.list
-    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ED444FF07D8D0BF6
+    sudo mv /etc/apt/backup/sources.list-"$NOW".bak /etc/apt/backup/kali.sources-"$NOW".bak
+    sudo cp -Rv ~/work/sketch/Filez/apt/sources.list /etc/apt/sources.list.d/kali.sources
+    #sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ED444FF07D8D0BF6
     #sudo mv /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d/kali-keys-$now.gpg
     elif [ $wall = 'b' ]; then
         #sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
