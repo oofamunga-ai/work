@@ -13,7 +13,8 @@ else
     echo "$BOBO does not exist."
     mkdir ~/work
     cd ~/work
-    git clone https://github.com/daboss7627/sketch.git
+    #git clone https://github.com/daboss7627/sketch.git
+    git clone https://github.com/oofamunga-ai/work
 fi
 
 #sudo apt-get update

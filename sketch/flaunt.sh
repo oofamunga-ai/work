@@ -133,6 +133,8 @@ sudo apt-get -y install debian-goodies
 sudo apt install -y cmake libusb-1.0-0-dev make gcc g++ libbluetooth-dev wget pkg-config python3-numpy python3-qtpy python3-setuptools
 sudo apt -y autoremove
 sudo cp -Rv $MONK/hi /usr/bin/hi 
+sed -i -e '$aalias work="cd $HOME/work/sketch"' ~/.profile
+sed -i -e '$aalias menu="cd $HOME/work/sketch/Filez/Menu"' ~/.profile
 mkdir -p $HOME/sourceCode/arm
 sudo apt-get -y install linux-headers-$(uname -r)
 sudo apt-get -y install rust-all

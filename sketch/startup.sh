@@ -269,7 +269,7 @@ if [ $wall = 'a' ]; then
         #sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0E98404D386FA1D9
     else
 	echo "cool ;-P"
-	sudo cp /etc/apt/backup/sources.list-"$NOW".bak /etc/apt/sources.list
+	#sudo cp -Rv /etc/apt/backup/sources.list-"$NOW".bak /etc/apt/sources.list
 fi
 }
 
