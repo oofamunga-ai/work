@@ -43,7 +43,7 @@ echo "building Linux Kernel"
 mkdir -p $HOME/sourceCode/pc
 cd $HOME/sourceCode/pc
 #git clone --recurse-submodules https://github.com/daboss7627/linux.git ~/work/sketch/Filez/sourceCode/LinuxKernel
-git clone --recurse-submodules https://github.com/torvalds/linux.git $HOME/sourceCode/pc/LinuxKernel
+git clone --recurse-submodules https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git $HOME/sourceCode/pc/LinuxKernel #https://github.com/torvalds/linux.git
 cd ~/sourceCode/pc/LinuxKernel
 git pull
 git add .
