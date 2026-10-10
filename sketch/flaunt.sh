@@ -83,7 +83,7 @@ if [ -e "$MOX" ]; then
 	echo "$MOX exists."
 	else
 	echo "Installing FireFox" 
-	wget -nc -O $HOME/Downloadz/firefox-nightly.tar.xz https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central/firefox-152.0a1.en-US.linux-x86_64.tar.xz
+	wget -nc -O $HOME/Downloadz/firefox-nightly.tar.xz https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central/firefox-160.0a1.en-US.linux-x86_64.tar.xz
 	cd $HOME/Downloadz
 	cp -Rv firefox-nightly.tar.xz ../Appz
 	cd ../Appz
