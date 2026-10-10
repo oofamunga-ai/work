@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CHUNG=~/work/sketch/
+CHUNG=~/work/sketch
 MOG=~/work/sketch/Filez/
 MOX=~/work/sketch/Filez/Appz/firefox/firefox 
 LUA=~/work/sketch/Filez/Appz
