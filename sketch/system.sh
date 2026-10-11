@@ -251,7 +251,7 @@ cd ~/sourceCode/arm/build
 git pull
 #sudo rm -r ~/work/sketch/Filez/sourceCode/arm/build/lib/functions/host/prepare-host.sh
 #cp ~/work/sketch/Filez/builder/prepare-host.sh ~/work/sketch/Filez/sourceCode/arm/build/lib/functions/host/prepare-host.sh
-./compile.sh EXPERT=yes KERNEL_BTF=no #\
+./compile.sh EXPERT=yes KERNEL_BTF=yes #\
 #BOARD=firefly-rk3399 \
 #BRANCH=edge \
 #RELEASE=sid \
