@@ -358,15 +358,15 @@ cd $HOME/Appz
 tar -xvf gcc-arm-none-eabi-9-2019-q4-major-x86_64-linux.tar.bz2 
 #tar -xvf arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi.tar.xz
 if [ $hooch = 'debian' ]; then ### search to see if PATH's are already in path
-	sed -i -e '$aPATH="$HOME/Appz/gcc-arm-none-eabi-9-2019-q4-major:$PATH"' ~/.profile #add sed command to check if this is already there
-	sed -i -e '$aPATH="$HOME/Appz/gcc-arm-none-eabi-9-2019-q4-major/bin:$PATH"' ~/.profile
+	sed -i -e '$aPATH="$HOME/Appz/gcc-arm-none-eabi-9-2019-q4-major:$PATH"' ~/.bashrc #add sed command to check if this is already there
+	sed -i -e '$aPATH="$HOME/Appz/gcc-arm-none-eabi-9-2019-q4-major/bin:$PATH"' ~/.bashrc
 	#sed -i -e '$aPATH="~/work/sketch/Filez/Appz/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi:$PATH"' ~/.profile #add sed command to check if this is already there
 	#sed -i -e '$aPATH="~/work/sketch/Filez/Appz/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin:$PATH"' ~/.profile
 	source ~/.profile
         	else
         		if [ $hooch = 'ubuntu' ]; then
-        		sed -i -e '$aPATH="$HOME/Appz/gcc-arm-none-eabi-9-2019-q4-major:$PATH"' ~/.bashrc #add sed command to check if this is already there
-			sed -i -e '$aPATH="$HOME/Appz/gcc-arm-none-eabi-9-2019-q4-major/bin:$PATH"' ~/.bashrc
+        		sed -i -e '$aPATH="$HOME/Appz/gcc-arm-none-eabi-9-2019-q4-major:$PATH"' ~/.profile #add sed command to check if this is already there
+			sed -i -e '$aPATH="$HOME/Appz/gcc-arm-none-eabi-9-2019-q4-major/bin:$PATH"' ~/.profile
 			#sed -i -e '$aPATH="~/work/sketch/Filez/Appz/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi:$PATH"' ~/.bashrc #add sed command to check if this is already there
 			#sed -i -e '$aPATH="~/work/sketch/Filez/Appz/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin:$PATH"' ~/.bashrc
 			source ~/.bashrc

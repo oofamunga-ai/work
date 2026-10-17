@@ -67,14 +67,14 @@ else
 	. $HOME/esp/esp-idf/export.sh
 
 if [ $hooch = 'debian' ]; then
-		sed -i -e '$aPATH="$HOME/esp/esp-idf:$PATH"' ~/.profile
-		sed -i -e '$aPATH="$HOME/esp/esp-idf/tools:$PATH"' ~/.profile
-		source ~/.profile
+		sed -i -e '$aPATH="$HOME/esp/esp-idf:$PATH"' ~/.bashrc
+		sed -i -e '$aPATH="$HOME/esp/esp-idf/tools:$PATH"' ~/.bashrc
+		source ~/.bashrc
         	else
         		if [ $hooch = 'ubuntu' ]; then
-        			sed -i -e '$aPATH="$HOME/esp/esp-idf:$PATH"' ~/.bashrc
-				sed -i -e '$aPATH="$HOME/esp/esp-idf/tools:$PATH"' ~/.bashrc
-				source ~/.bashrc
+        			sed -i -e '$aPATH="$HOME/esp/esp-idf:$PATH"' ~/.profile
+				sed -i -e '$aPATH="$HOME/esp/esp-idf/tools:$PATH"' ~/.profile
+				source ~/.profile
 		fi
 	fi
 fi
