@@ -180,7 +180,8 @@ mkdir -p ~/sourceCode/rf
 cd ~/sourceCode/rf
 #git clone --recurse-submodules https://github.com/daboss7627/portapack-mayhem.git
 #git clone --recurse-submodules https://github.com/eried/portapack-mayhem.git
-git clone --recurse-submodules https://github.com/portapack-mayhem/mayhem-firmware.git
+#git clone --recurse-submodules https://github.com/portapack-mayhem/mayhem-firmware.git
+git clone --recurse-submodules  https://github.com/oofamunga-ai/mayhem-firmware.git
 cd ~/sourceCode/rf/mayhem-firmware
 #git pull
 sudo rm -r build
